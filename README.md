@@ -17,9 +17,13 @@ You can also use Keyboard hotkeys instead.
 
 1. Clone the repository
 2. Run ``npm install`` in the repository folder
-3. Run ``Start.bat`` or ``node index.js`` to start the application
+3. Run ``node index.js`` to start the application
 4. (Optional) Configure the ``groups.json`` file to your liking
 5. (Optional) Configure the ``volume_keys.json`` file to your liking
 6. Configure the hotkeys on your Keyboard.
 If your Keyboard supports [VIA](https://www.caniusevia.com/), you can use it to configure the hotkeys on your Knob or any other button.
-[VIA Example](https://imgur.com/EcbQb0v)
+
+<div style="text-align: center;">
+<p>Here's my VIA config with the default hotkeys</p>
+<img src="https://i.ibb.co/RzMJv9G/image.png" alt="image"/>
+</div>
