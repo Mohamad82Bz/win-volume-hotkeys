@@ -1,0 +1,7 @@
+[
+  {
+    "name": "CommunicationApps",
+    "hotkey": "PAGE UP",
+    "apps": ["Discord", "TeamSpeak 3 Client"]
+  }
+]

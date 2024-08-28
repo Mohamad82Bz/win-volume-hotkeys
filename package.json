@@ -1,0 +1,23 @@
+{
+  "name": "win-volume-hotkeys",
+  "version": "1.0.0",
+  "description": "A nodejs application that allows you to control the volume of specific applications via keyboard hotkeys",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "keywords": ["volumemixer", "hotkeys", "hotkey", "volumehotkey"],
+  "author": "Mohamad82Bz",
+  "license": "ISC",
+  "dependencies": {
+    "get-windows": "^9.2.0",
+    "node-audio-volume-mixer": "^1.0.3",
+    "node-global-key-listener": "^0.3.0",
+    "sound-play": "^1.1.0"
+  },
+  "devDependencies": {
+    "electron": "^32.0.1"
+  }
+}
