@@ -1,4 +1,4 @@
-# Knob Controller
+# Windows Volume Controller
 
 A Node.js application that controls the volume of specific (groups of) applications with hotkeys.
 
