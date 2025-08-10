@@ -66,7 +66,9 @@ async function main() {
 
                     if (condition) {
                         const session = value.pid
-                        const volume = getVolume(session) + (isVolumeDown ? -volumeAdjustment : volumeAdjustment)
+						const currentVolume = getVolume(session)
+						const adjustment = currentVolume + (isVolumeDown ? -volumeAdjustment : 0) <= 0.1 ? 0.010 : volumeAdjustment
+                        const volume = currentVolume + (isVolumeDown ? -adjustment : adjustment)
                         setVolume(session, volume)
                         console.log(`Changing volume for ${value.name} with pid ${session} to ${volume}`)
                     }
