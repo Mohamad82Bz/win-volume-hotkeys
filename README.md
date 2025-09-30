@@ -8,7 +8,7 @@ I created this application because I wanted to make use my Keyboard Knob to cont
 You can also use Keyboard hotkeys instead.
 
 ## What this does?
-- Changes Spotify volume when it's playing music. (Desktop app only)
+- Changes Spotify or YouTube Music volume when it's playing music. (Desktop app only, I'm using [ytmd](https://github.com/ytmd-devs/ytmd) for YouTube Music)
 - Changes volume of application groups that are configured in the ``groups.json`` file when the secondary hotkey is pressed down
   - For example, in the default ``groups.json`` I have configured to change the volume of Discord AND TeamSpeak 3 when I'm using the volume hotkeys while pressing the secondary hotkey.
 - Changes volume of the focused application if none of the above pass.

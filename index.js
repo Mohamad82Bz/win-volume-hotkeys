@@ -44,7 +44,7 @@ async function main() {
                 if (selectedGroup) {
                     return selectedGroup.apps.includes(value.owner.name)
                 } else {
-                    return value.owner.name === "Spotify" && !value.title.startsWith("Spotify")
+                    return (value.owner.name === "Spotify" && !value.title.startsWith("Spotify") || value.owner.name === "YouTube Music" && !value.title.startsWith("YouTube Music"))
                 }
             });
 
@@ -52,7 +52,6 @@ async function main() {
                 if (!activeWindow) return
                 appGroup.push(activeWindow)
             }
-
             audioSessionProcesses.forEach((value) => {
                 let condition = false
                 let name = value.name.split(".exe")[0]
@@ -60,6 +59,9 @@ async function main() {
                     // Discord has multiple processes with different uid but this volume mixer library returns all with the same uid, so we need to check the name instead.
                     if (app.owner.name === "Discord") {
                         condition = app.owner.name === name
+                    } else if (app.owner.name === "YouTube Music") {
+                        // This third party YouTube Music app (https://github.com/ytmd-devs/ytmd) has different pid than the process shown in the volume mixer, so we need to check the name instead.
+                        condition = name.startsWith("YouTube Music")
                     } else {
                         condition = app.owner.processId === value.pid
                     }

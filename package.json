@@ -12,6 +12,7 @@
   "author": "Mohamad82Bz",
   "license": "ISC",
   "dependencies": {
+    "@mapbox/node-pre-gyp": "^1.0.11",
     "get-windows": "^9.2.0",
     "node-audio-volume-mixer": "^1.0.3",
     "node-global-key-listener": "^0.3.0",
